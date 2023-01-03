@@ -1,0 +1,16 @@
+<ion-content>
+  <div class="header">
+    <h1>Muebleria</h1>
+    <div class="avatar">
+      <ion-img src=""></ion-img>
+    </div>
+  </div>
+
+  <app-searchbar></app-searchbar>
+  <h1>Categorias</h1>
+  <app-category-item></app-category-item>
+  <h1>Productos</h1>
+  <div class="products-list" *ngFor="let product of products" >
+    <app-product-card [item]="product"></app-product-card>
+  </div>
+</ion-content>
